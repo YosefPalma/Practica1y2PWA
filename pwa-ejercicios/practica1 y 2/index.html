@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi PWA</title>
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Vincular el manifiesto JSON -->
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="manifest" href="./service-worker.js" />
+  <!-- Meta theme-color para navegadores -->
+  <meta name="theme-color" content="#007bff" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Bienvenido a mi PWA</h1>
+    <img src="images/icon-192x192.png" alt="Logo de mi app" class="logo" />
+  </header>
+
+  <main class="content">
+    <p>¡Esta es una PWA! Puedes añadirla a tu pantalla de inicio.</p>
+
+    <section>
+      <h2>¿Qué hace esta práctica?</h2>
+      <ul>
+        <li>Incluye un manifiesto JSON en la raíz.</li>
+        <li>Iconos para agregar a pantalla de inicio.</li>
+        <li>Registro de un Service Worker básico.</li>
+      </ul>
+    </section>
+
+    <button id="checkManifest">Verificar manifiesto (consola)</button>
+  </main>
+
+  <footer class="site-footer">
+    <p>Desarrollado por Yosef Palma</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
